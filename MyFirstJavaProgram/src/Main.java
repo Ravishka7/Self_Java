@@ -1,5 +1,5 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
         System.out.println("I love Pizza");
@@ -30,5 +30,31 @@ public class Main {
         b = temp;// Finally, we pour temp into b.
 
         System.out.println("After swapping: a = "+a+" and b = "+b+"\n");
+
+
+        //Getting user inputs
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your age: ");
+        int age = input.nextInt();
+
+        System.out.println("Hello "+name+".");
+        System.out.println("Your age is "+age+"\n");
+
+
+
+        //GUI Intro
+        String names = JOptionPane.showInputDialog("Enter your name: ");
+        int ages = Integer.parseInt(JOptionPane.showInputDialog("Enter your age: "));
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height: "));
+
+        JOptionPane.showMessageDialog(null, "Hello "+names+".Your age is "+ages+" and your height is "+height+"\n");
+
+
     }
 }
