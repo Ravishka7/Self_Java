@@ -40,10 +40,7 @@ public class Main {
             double r = -b / (2*a);
             System.out.println("The root: " +r);
         } else {
-            double realPart = -b / (2*a);
-            double imaginaryPart = Math.sqrt(-discriminant)/ (2*a);
-            System.out.println("Root 1: " + realPart + "+" +imaginaryPart+ "i");
-            System.out.println("Root 1: " + realPart + "-" +imaginaryPart+ "i");
+            System.out.println("The equation has no real roots");
         }
 
         //3
