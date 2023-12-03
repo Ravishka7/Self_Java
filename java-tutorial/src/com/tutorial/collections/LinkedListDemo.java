@@ -31,7 +31,7 @@ public class LinkedListDemo {
         list.add("H");
         System.out.println(list);
 
-        
+
         System.out.println(list.get(2));
 
 
