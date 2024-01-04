@@ -8,5 +8,6 @@ public class Demo {
         animal.Sound();
         cow.Sound();
         dog.Sound();
+        dog.Sound("angry");
     }
 }
